@@ -33,7 +33,7 @@ As you can see the `feature` branch and the `master` branch have progressed with
 5. Use `git log --decorate --oneline` to see the change to the history and that commit F should now be the newest commit on the master branch
 6. Use `cat` to view the content of `names.txt` look how it has now changed!
 7. Use `git reset --hard HEAD^` to delete that cherry picking from the history so that we can now try again and cherry pick a range of commits
-8. Use `git log --decorate --oneline --graph --onelinecoda` to check the the cherry picked commit is now removed from the branch
+8. Use `git log --decorate --oneline --graph --oneline` to check the the cherry picked commit is now removed from the branch
 9. We are now essentially back to where we began, now use `git cherry-pick <commit_hash_F>^..<commit_hash_G>` to cherry pick the range of commits from F to G (the two commits). Pay close attention and do not forget the caret `^` symbol after the first commit hash (see the section *Useful Note* below to understand why this is needed)
 10. Use `git log --decorate --oneline --graph --oneline` to view the history
 11. Use `cat` to view the contents of `names.txt` and `sentence.txt` look how they have changed!
